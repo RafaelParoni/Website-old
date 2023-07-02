@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/835142013561208904/912138792243171429/Icon.jpg" />
+
+
+    <title>Rafael Paroni - Website</title>
+
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="Crts.css" />
+
+
+  </head>
+  <body>
+    <div class="SettingHide">
+      <button class="SettingVisibleButton" onclick="SettingVisible()">Settings</button>
+    </div>
+    <div class="Settigs" id="SHD">
+      <button class="SettingHideButton" onclick="SettingHide()"> < </button>
+      <input class="SettigsMsgTop" placeholder="Digite seu texto subrior aqui!"></input>
+       <input class="SMC" placeholder="Digite seu Titulo aqui!" id="SMCID"></input>
+       <div class="SMCPosition"></div>
+    </div>
+  </body>
+  <script>
+      /* document.getElementById("SHD").style.marginLeft = "-0%"; */
+    var id = null;
+    function SettingVisible() {
+      var elem = document.getElementById("SHD");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 100) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.left = pos + '%'; 
+          elem.style.left = pos + '%'; 
+        }
+      }
+    }
+    var id = null;
+    function SettingHide() {
+      var elem = document.getElementById("SHD");   
+      var pos = 100;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 0) {
+          clearInterval(id);
+        } else {
+          pos--; 
+          elem.style.left = pos + '%'; 
+          elem.style.left = pos + '%'; 
+        }
+      }
+    }
+    
+  </script>
+</html>

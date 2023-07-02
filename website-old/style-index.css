@@ -1,0 +1,923 @@
+
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+
+body {
+  font-family: HK Grotesk;
+  background-color: #070807;
+  font-family: 'Brush Script MT', cursive;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+
+
+@keyframes RotacaoAntiHorario {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-90deg);}
+}
+@keyframes RotacaoHorario {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(100deg);}
+}
+
+.Home-title { 
+  font-size: 60px;
+  color: white;
+}
+.Home-title:hover {
+  color: red;
+  animation: titlemove 5s infinite;
+}
+@keyframes titlemove {
+  0% {color: white;}
+  25% {color: red;}
+  50% {color: blue;}
+  75% {color: yellow;}
+  100% {color: white;}
+}
+.Button-youtube {
+  background-color: white;
+  background-image: url("https://cdn.icon-icons.com/icons2/1584/PNG/512/3721679-youtube_108064.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-youtube:hover {
+  background-position: 1% 0%;
+}
+
+.Button-instagram {
+  background-color: white;
+  background-image: url("https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-instagram:hover {
+  background-position: 1% 0%;
+}
+.Button-curri {
+  background-color: white;
+  background-image: url("https://cdn.glitch.global/681c19e7-5c82-4d5f-b32e-771c6de1a2e6/png-transparent-resume-curriculum-vitae-computer-icons-resume.png?v=1663355343465");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-curri:hover {
+  background-position: 1% 0%;
+}
+
+.Button-codepen{
+  background-color: white;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/social-media-2091/100/social-32-512.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-codepen:hover {
+  background-position: 1% 0%;
+}
+
+.Button-twitter{
+  background-color: white;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/twitter-1653087-1402375.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-twitter:hover {
+  background-position: 1% 0%;
+}
+
+.Button-discord{
+  background-color: white;
+  background-image: url("https://logodownload.org/wp-content/uploads/2017/11/discord-logo-icone.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-discord:hover{
+  background-position: 1% 0%;
+}
+
+.ajuste {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button-discord {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.Button-discord .tooltiptext {
+  visibility: hidden;
+  width: 50%;
+  background-color: #1659a1;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-top: 40px;
+  left: 25%;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.Button-discord:hover .tooltiptext {
+  visibility: visible;
+}
+
+.Button-projeto{
+  background-color: white;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/find-a-job-and-interview-outline/512/resume_online_job_work_internet_website_application-512.png");
+  background-position: -50px 0%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+  background-size: 45px;
+}
+.Button-projeto:hover {
+  background-position: 1% 0%;
+}
+
+
+.LingBasic {
+  position: absolute;
+  color: black;
+  width: 20px;
+  border-radius: 50px;
+  text-align: center;  
+}
+.LingBasic:hover .LingBasciText  {
+  visibility: visible;
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+.LingBasciText  {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 30px;
+}
+
+
+
+.div-profile {
+  width: 100%;
+  height: 800px;
+  background-color: transparent;
+  display: grid;
+  position: relative;
+  place-items: center;
+  animation: example 4s infinite;
+  margin-top: 10px;
+}
+
+@keyframes example {
+  0%   {top:0px;}
+  50%  {top:15px;}
+  100% {top:0px;}
+}
+
+@keyframes mymove {
+  from {top: -10px;}
+  to {top: 0px;}
+}
+
+.box-profile {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  background-image: url("https://cdn.discordapp.com/attachments/835142013561208904/912138792243171429/Icon.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  margin-top: 40px;
+
+}
+.Name-profile {
+  color: white;
+  margin-top: 00px;
+}
+.Descri-profile {
+  color: white;
+  font-size: 30px;
+  margin-top: -20px;
+}
+
+.div-imgs-lineOne {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.img-js {
+  width: 100px;
+  height: 125px;
+  margin: 10px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-position: top;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/javascript-23-1174949.png");
+}
+.text-js{
+  text-align: center;
+  margin-top: 103px;
+  color: white;
+}
+.img-js .toolJS {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 345px;
+  left: 50%;
+}
+.img-css {
+  width: 100px;
+  height: 125px;
+  margin: 10px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-position: top;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png");
+}
+.text-css {
+  text-align: center;
+  margin-top: 103px;
+  color: white;
+}
+.img-css .toolCSS {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 345px;
+  right: 50%;
+}
+
+.div-imgs-lineTwo {
+  background-color: transparent;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 30px;
+}
+.img-html {
+  width: 100px;
+  height: 125px;
+  margin: 10px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-position: top;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/732/732212.png");
+}
+.img-html .tooltHTML {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 490px;
+  left: 50%;
+}
+
+.img-c {
+  width: 100px;
+  height: 125px;
+  margin: 10px;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-position: top;
+  background-image: url("https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png");
+}
+.img-c .toolC {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 490px;
+  right: 50%;
+}
+
+.text-c {
+  text-align: center;
+  margin-top: 103px;
+  color: white;
+}
+.text-html {
+  text-align: center;
+  margin-top: 103px;
+  color: white;
+}
+
+.div-imgs-lineThree {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: -20px;
+}
+.img-discord {
+  width: 100px;
+  height: 125px;
+  margin: 10px;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-position: top;
+  background-image: url("https://koya.gg/assets/img/discordjs-logo.png");
+}
+.text-discord {
+  text-align: center;
+  margin-top: 90px;
+  color: white;
+}
+
+.img-discord {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.img-discord .tooltdiscord {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 105%;
+}
+.img-c .tooltC {
+  visibility: visible;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 105%;
+}
+
+.div-projetoOne {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 150%;
+  height: auto;
+  background-image: url("https://cdn.discordapp.com/attachments/835142013561208904/914554205828689990/website.png");
+  background-repeat: no-repeat;
+  background-position: 300% 90%;
+  background-size: 80px;
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+}
+
+.div-projetoOne:hover  {
+  background-size: 80px;
+  background-position: 100% 90%;
+  animation: backcolor 7s infinite;
+}
+@keyframes backcolor {
+  0% {border-color: white;}  
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: white;}
+}
+
+.div-projetoOne:hover .Title-projetoOne {
+    animation: fontcolor 5s infinite;
+}
+@keyframes fontcolor {
+  0% {bcolor: white;}
+  25% {color: red;}
+  50% {color: green;}
+  75% {color: yellow;}
+  100% {color: white;}
+}
+
+.div-projetoOne:hover .link-projetoOne {
+    animation: linkColor 5s infinite;
+}
+@keyframes linkColor {
+  0% {border-color: transparent;}
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: transparent;}
+}
+
+.Title-projetoOne {
+  color: white;
+  margin: 15px;
+}
+.subTitle-projetoOne {
+  color: #808080;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.link-projetoOne {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 80px;
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.div-projetoTWO {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 150%;
+  height: auto;
+  margin-top: 40px;
+  background-image: url("https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png");
+  background-repeat: no-repeat;
+  background-position: 300% 95%;
+  background-size: 80px;
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+}
+
+.div-projetoTWO:hover  {
+  background-size: 80px;
+  background-position: 99% 95%;
+  animation: backcolorTWO 7s infinite;
+}
+@keyframes backcolorTWO {
+  0% {border-color: white;}  
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: white;}
+}
+
+.div-projetoTWO:hover .Title-projetoTWO {
+    animation: fontcolorTWO 5s infinite;
+}
+@keyframes fontcolorTWO {
+  0% {bcolor: white;}
+  25% {color: red;}
+  50% {color: green;}
+  75% {color: yellow;}
+  100% {color: white;}
+}
+
+.div-projetoTWO:hover .link-projetoTWO {
+    animation: linkColorTWO 5s infinite;
+}
+@keyframes linkColorTWO {
+  0% {border-color: transparent;}
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: transparent;}
+}
+
+.Title-projetoTWO {
+  color: white;
+  margin: 15px;
+}
+.subTitle-projetoTWO {
+  color: #808080;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.link-projetoTWO {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 80px;
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.div-projetoThree {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 150%;
+  height: auto;
+  margin-top: 40px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/427/427533.png");
+  background-repeat: no-repeat;
+  background-position: 300% 95%;
+  background-size: 80px;
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+}
+
+.div-projetoThree:hover  {
+  background-size: 80px;
+  background-position: 99% 95%;
+  animation: backcolorThree 7s infinite;
+}
+@keyframes backcolorThree {
+  0% {border-color: white;}  
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: white;}
+}
+
+.div-projetoThree:hover .Title-projetoThree {
+    animation: fontcolorThree 5s infinite;
+}
+@keyframes fontcolorThree {
+  0% {bcolor: white;}
+  25% {color: red;}
+  50% {color: green;}
+  75% {color: yellow;}
+  100% {color: white;}
+}
+
+.div-projetoThree:hover .link-projetoThree {
+    animation: linkColorThree 5s infinite;
+}
+@keyframes linkColorThree {
+  0% {border-color: transparent;}
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: transparent;}
+}
+
+.Title-projetoThree {
+  color: white;
+  margin: 15px;
+}
+.subTitle-projetoThree {
+  color: #808080;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.link-projetoThree {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 80px;
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.Exempleimgs {
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.imgOne {
+  width: 400px;
+  height: auto;
+}
+.imgOne-hover {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  border-radius: 6px;
+}
+.linkprojeto {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+
+
+.div-projetos {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 150%;
+  height: auto;
+  background-image: url("https://cdn.discordapp.com/attachments/835142013561208904/914554205828689990/website.png");
+  background-repeat: no-repeat;
+  background-position: 300% 90%;
+  background-size: 80px;
+  -webkit-transition: background-position .7s;
+  transition: background-position .7s;
+}
+
+.div-projetos:hover  {
+  animation: backcolor 7s infinite;
+}
+@keyframes backcolor {
+  0% {border-color: white;}  
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: white;}
+}
+
+.div-projetos:hover .Title-projetos {
+    animation: fontcolor 5s infinite;
+}
+@keyframes fontcolor {
+  0% {bcolor: white;}
+  25% {color: red;}
+  50% {color: green;}
+  75% {color: yellow;}
+  100% {color: white;}
+}
+
+.div-projetos:hover {
+    animation: linkColor 5s infinite;
+}
+@keyframes linkColor {
+  0% {border-color: transparent;}
+  25% {border-color: red;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: transparent;}
+}
+
+.Title-projetos {
+  color: white;
+  margin: 15px;
+}
+.subTitle-projetos {
+  color: #808080;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.link-projetos {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 100px;
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.linguas-projetos {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: left;
+  place-items: left;
+}
+.imgHTML-projetos {
+
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/732/732212.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.imgCSS-projetos {
+
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.imgJS-projetos {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/javascript-23-1174949.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.imgDiscordJs-projetos {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://koya.gg/assets/img/discordjs-logo.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.imgNodeJs-projetos {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://www.cursou.com.br/wp-content/uploads/2021/09/Curso-de-API-Node.js-com-Typescript.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.imgPY-projetos {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-position: center;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png");
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
+.CodeWebsit {
+  width: 100%;
+  height: 600px;
+}

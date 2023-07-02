@@ -1,0 +1,129 @@
+
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+
+body {
+  font-family: HK Grotesk;
+  background-color: red;
+  font-family: 'Brush Script MT', cursive;
+  margin: 0px;
+}
+.Settigs {
+  position: absolute;
+  width: 100%;
+  height: 790px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-left: -100%;
+}
+.SettingHide {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  margin-left: -100px;
+  background-color: transparent;
+}
+.SettingHide:hover {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+   margin-left: 0px;
+  background-color: transparent;
+  animation: SettingHideMove 5s infinite;
+}
+
+@keyframes SettingHideMove {
+  0% {Margin-left: -100px}
+  20% {Margin-left: 0px}
+}
+
+.SettingVisibleButton {
+  width: 70px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-left: 5px;
+  color: white;
+}
+
+.SettingHideButton{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-top: 750px;
+  margin-left: 5px;
+  color: white;
+  opacity: 1.0;
+}
+.SettigsMsgTop {
+  position: relative;
+  width: 50%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  lign-items: center;
+  justify-content: center;
+  left: 25%;
+}
+::placeholder {
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.SettigsMsgCenter {
+  position: absolute;
+  width: 50%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  lign-items: center;
+  justify-content: center;
+  left: 25%;
+  top: 40%;
+}
+.SMC:hover {
+  position: absolute;
+  width: 50%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  lign-items: center;
+  justify-content: center;
+  left: 25%;
+  top: 40%;
+}
+
+.SMCPosition  {
+  position: absolute;
+  width: 50%;
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  lign-items: center;
+  justify-content: center;
+  left: 25%;
+  top: 40%;
+}
